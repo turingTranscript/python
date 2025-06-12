@@ -2,14 +2,14 @@
 title: Week 9
 weekNumber: 9
 days:
-- date: 2024-09-26
+- date: 2024-09-23
   events:
-    ? '**Lecture 9**{: .label .label-lecture } [Biopython Intro & Seq Object](lecture/lec09)'
+    ? '**Lecture 8**{: .label .label-lecture } [Seq Object Manipulation (Transcription, Translation, Rev Comp) & SeqRecord](lecture/lec08)'
     : ''
-- date: 2024-09-28
+- date: 2024-09-25
   events:
-    ? '**Lab 9**{: .label .label-lab } [Getting Started with Biopython Sequences](lab/lab09)'
-    ? '**Homework 9**{: .label .label-hw } [Biopython Seq Objects](hw/hw09) (due Oct 5)'
+    ? '**Lab 8**{: .label .label-lab } [In-Silico Sequence Transformations & Working with SeqRecord](lab/lab08)'
+    ? '**Homework 8**{: .label .label-hw } [Seq Manipulation & SeqRecord](hw/hw08) (due Oct 2)'
     : ''
 
 ---

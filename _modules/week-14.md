@@ -2,14 +2,14 @@
 title: Week 14
 weekNumber: 14
 days:
-- date: 2024-10-31
+- date: 2024-11-04
   events:
-    ? '**Lecture 14**{: .label .label-lecture } [Sequence Alignment & Regular Expressions](lecture/lec14)'
+    ? '**Lecture 12**{: .label .label-lecture } [Numerical Data with NumPy & Tabular Data with Pandas](lecture/lec12)'
     : ''
-- date: 2024-11-02
+- date: 2024-11-06
   events:
-    ? '**Lab 14**{: .label .label-lab } [Performing Alignments & Finding Biological Motifs](lab/lab14)'
-    ? '**Homework 14**{: .label .label-hw } [Alignment & Regex](hw/hw14) (due Nov 9)'
+    ? '**Lab 12**{: .label .label-lab } [Basic Data Analysis with NumPy & Pandas](lab/lab12)'
+    ? '**Homework 12**{: .label .label-hw } [NumPy & Pandas](hw/hw12) (due Nov 13)'
     : ''
 
 ---

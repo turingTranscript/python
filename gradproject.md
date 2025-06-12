@@ -1,14 +1,14 @@
 ---
 layout: page
-title: Graduate Project
+title: Project
 nav_exclude: true
-nav_order: 6
+nav_order: 5
 description: Specifications for the final project for Data 200.
 ---
 
-# Graduate Project
+# Project
 
-The graduate project is offered only to students enrolled in Data C200 or CS C200A. Other students are welcome to explore the questions and datasets in the project for learning, but their work will not be graded or counted towards their final grades.
+The project is offered only to students enrolled in Data C200 or CS C200A. Other students are welcome to explore the questions and datasets in the project for learning, but their work will not be graded or counted towards their final grades.
 
 The purpose of the project is to give students experience in both open-ended data science analysis and research in general. In this project, you will work with **one or any combination** of the following datasets provided to you to explore research questions that you define.
 
@@ -30,7 +30,7 @@ Please be sure to consult the [references on causal inference](#causal_inference
 
 ### Accessing Datasets
 
-All the datasets (or links to access and download them) provided by us can be found inside the [graduate project dataset link](https://data100.datahub.berkeley.edu/hub/user-redirect/git-pull?repo=https://github.com/DS-100/sp21&urlpath=tree/sp21/grad_proj&branch=main) on DataHub. If you wish to work on the project locally, you can also download the zip files containing the datasets for each topic.
+All the datasets (or links to access and download them) provided by us can be found inside the [project dataset link](https://data100.datahub.berkeley.edu/hub/user-redirect/git-pull?repo=https://github.com/DS-100/sp21&urlpath=tree/sp21/grad_proj&branch=main) on DataHub. If you wish to work on the project locally, you can also download the zip files containing the datasets for each topic.
 
 The following subsections contain the descriptions and additional requirements for each dataset.
 

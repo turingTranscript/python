@@ -2,14 +2,14 @@
 title: Week 12
 weekNumber: 12
 days:
-- date: 2024-10-17
+- date: 2024-10-14
   events:
-    ? '**Lecture 12**{: .label .label-lecture } [SeqIO Module](lecture/lec12)'
+    ? '**Lecture 11**{: .label .label-lecture } [Sequence Alignment (Bio.pairwise2) & Regular Expressions](lecture/lec11)'
     : ''
-- date: 2024-10-19
+- date: 2024-10-16
   events:
-    ? '**Lab 12**{: .label .label-lab } [Efficiently Handling Biological Sequence Files](lab/lab12)'
-    ? '**Homework 12**{: .label .label-hw } [SeqIO File Handling](hw/hw12) (due Oct 26)'
+    ? '**Lab 11**{: .label .label-lab } [Performing Alignments & Pattern Matching with Regex](lab/lab11)'
+    ? '**Homework 11**{: .label .label-hw } [Alignment & Regex](hw/hw11) (due Oct 23)'
     : ''
 
 ---

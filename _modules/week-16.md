@@ -2,9 +2,9 @@
 title: Week 16
 weekNumber: 16
 days:
-- date: 2024-11-14
+- date: 2024-12-04
   events:
-    ? '**Lecture 16**{: .label .label-lecture } [Project Work & Review](lecture/lec16)'
+    ? '**Exam**{: .label .label-exam } [End Semester Exams begin](exam/end_sem) (Dec 4 - Dec 17)'
     : ''
 - date: 2024-11-16
   events:
@@ -12,7 +12,7 @@ days:
     ? '**Homework 16**{: .label .label-hw } [Final Project](hw/hw16) (due Nov 23)'
 - date: 2021-12-06
   events:
-    ? '**Grad Project**{: .label .label-proj } Peer Grading due'
+    ? '**Project**{: .label .label-proj } Peer Grading due'
     : ''
 - date: 2021-12-07
   events:
