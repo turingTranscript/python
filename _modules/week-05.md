@@ -2,28 +2,14 @@
 title: Week 5
 weekNumber: 5
 days:
-- date: 2021-09-20
+- date: 2024-08-29
   events:
-    ? 'N/A'
+    ? '**Lecture 5**{: .label .label-lecture } [Functions Deep Dive](lecture/lec05)'
     : ''
-- date: 2021-09-21
+- date: 2024-08-31
   events:
-    ? '**Lecture 8**{: .label .label-lecture } [SQL I](lecture/lec08)'
-    ? '**Live Lab**{: .label .label-lab }'
+    ? '**Lab 5**{: .label .label-lab } [Designing & Debugging Functions for Biology](lab/lab05)'
+    ? '**Homework 5**{: .label .label-hw } [Complex Functions](hw/hw05) (due Sep 7)'
     : ''
-- date: 2021-09-22
-  events:
-    ? 'N/A'
-    : ""
-- date: 2021-09-23
-  events:
-    ? '**Lecture 9**{: .label .label-lecture } [SQL II](lecture/lec09)'
-    : ""
-- date: 2021-09-24
-  events:
-    ? '**Discussion 5**{: .label .label-disc } [SQL](https://drive.google.com/file/d/1mHomGaxUSqtpRm62IERuRG37nDUtBGIO/view?usp=sharing) ([solutions](https://drive.google.com/file/d/1YapGTnXkw9WqE9GLXGGLcAebLOJkjIgs/view?usp=sharing))'
-    ? '**Homework 5**{: .label .label-hw } [SQL](https://data100.datahub.berkeley.edu/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2FDS-100%2Ffa21&urlpath=lab%2Ftree%2Ffa21%2Fhw%2Fhw5&branch=main) (due Oct 2)'
-    ? '**Lab 5**{: .label .label-lab } [Transformations and SQL](https://data100.datahub.berkeley.edu/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2FDS-100%2Ffa21&urlpath=lab%2Ftree%2Ffa21%2Flab%2Flab05&branch=main) (due Sept 28)'
-    : ""
 
 ---
