@@ -15,25 +15,26 @@ Jump to [Instructors](#inst), [Teaching Assistants](#tas), or [Tutors](#tutors)
 
 ## Instructors
 
+{% assign instructors = site.staffers | where: 'role', 'Instructor' %}
 <div class="role">
-  {% assign instructors = site.staffers | where: 'role', 'Instructor' %}
   {% for staffer in instructors %}
   {{ staffer }}
   {% endfor %}
+
 </div>
 
 <a name = 'tas'></a>
 
 ## Teaching Assistants
 
+{% assign teaching_assistants = site.staffers | where: 'role', 'Teaching Assistant' %}
 <div class="role">
-  {% assign teaching_assistants = site.staffers | where: 'role', 'Teaching Assistant' %}
   {% for staffer in teaching_assistants %}
   {{ staffer }}
   {% endfor %}
 </div>
 
-<a name = 'tutors'></a>
+<!-- <a name = 'tutors'></a>
 
 ## Tutors
 
@@ -41,5 +42,5 @@ Jump to [Instructors](#inst), [Teaching Assistants](#tas), or [Tutors](#tutors)
   {% assign readers = site.staffers | where: 'role', 'Tutor' %}
   {% for staffer in readers %}
   {{ staffer }}
-  {% endfor %}
+  {% endfor %} -->
 </div>
