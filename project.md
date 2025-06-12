@@ -1,7 +1,6 @@
 ---
 layout: page
 title: Project
-nav_exclude: true
 nav_order: 5
 description: Specifications for the final project for Data 200.
 ---
