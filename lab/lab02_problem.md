@@ -10,7 +10,9 @@ nav_exclude: true
 
 **Problem:** Write a Python script to prompt the user for this information using the `input()` function. Store the data in appropriate variable types (integer, string, float). Perform a simple calculation (e.g., estimate the total bacterial count based on CFU/ml and a sample volume). Print a well-formatted summary of the infected river dolphin profile.
 
-$$N_{total} = C_{CFU/ml} \times V_{sample}$$
+```math
+N_{total} = C_{CFU/ml} \times V_{sample}
+```
 
 $N_{total}$ represents the Total Bacterial Count.
 $C_{CFU/ml}$ represents the Bacterial Concentration in Colony Forming Units per milliliter.
