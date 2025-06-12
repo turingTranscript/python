@@ -22,283 +22,136 @@ Jump to:
 
 <a name = 'about'></a>
 
-## About Data 100
+# Python & Biopython Course Syllabus
 
-Combining data, computation, and inferential thinking, data science is redefining how people and organizations solve challenging problems and understand their world. This intermediate level class bridges between [Data 8](http://data8.org) and upper division computer science and statistics courses as well as methods courses in other fields. In this class, we explore key areas of data science including question formulation, data collection and cleaning, visualization, statistical inference, predictive modeling, and decision making.​ Through a strong emphasis on data centric computing, quantitative critical thinking, and exploratory data analysis, this class covers key principles and techniques of data science. These include languages for transforming, querying and analyzing data; algorithms for machine learning methods including regression, classification and clustering; principles behind creating informative data visualizations; statistical concepts of measurement error and prediction; and techniques for scalable data processing.
-
-<br>
-
-### Goals
-
-- Prepare students for advanced Berkeley courses in data-management, machine learning, and statistics, by providing the necessary foundation and context
-- Enable students to start careers as data scientists by providing experience working with real-world data, tools, and techniques
-- Empower students to apply computational and inferential thinking to address real-world problems
-
-<br>
-
-### Prerequisites
-
-While we are working to make this class widely accessible, we currently require the following (or equivalent) prerequisites. **Unlike past semesters, prerequisites will be enforced in this class. It is your responsibility to know the material in the prerequisites.**
-
-- **Foundations of Data Science**: [Data 8](http://data8.org) covers much of the material in Data 100 but at an introductory level. Data8 provides basic exposure to python programming and working with tabular data as well as visualization, statistics, and machine learning.
-- **Computing**: _The Structure and Interpretation of Computer Programs_ ([CS 61A](http://cs61a.org)) or _Computational Structures in Data Science_ ([CS 88](https://cs88-website.github.io)). These courses provide additional background in python programming (e.g., for loops, lambdas, debugging, and complexity) that will enable Data 100 to focus more on the concepts in Data Science and less on the details of programming in python.
-- **Math**: _Linear Algebra_ (Math 54, [EE 16A](http://ee16a.org), or Stat 89A): We will need some basic concepts like linear operators, eigenvectors, derivatives, and integrals to enable statistical inference and derive new prediction algorithms. This may be satisfied concurrently to Data 100.
-
-<br>
-
-<a name = 'course_culture'></a>
+## Course Information
+**Course Code:** BT 2113 
+**Course Name:** Python & Biopython 
+**Credits:** 2 (1-0-2) 
+**Course Position:** Semester III 
+**Department offering the course:** Centre for Life Sciences 
+**Level:** Pre-Ph.D./Core for UG 2nd year 
+**Any pre-requisite course:** None 
+**Overlap with any existing course:** None 
+**Frequency of offering:** Every Fall 
+**Faculty who will teach the course:** Dr. Balan Ramesh 
 
 ## Course Culture
 
-Students taking Data C100/C200 come from a wide range of backgrounds. We hope to foster an inclusive and safe learning environment based on curiosity rather than competition. All members of the course community—the instructor, students, and GSIs—are expected to treat each other with courtesy and respect. Some of the responsibility for that lies with the staff, but a lot of it ultimately rests with you, the students.
-
-This section is inspired and adapted with permission from Dr. Sarah Chasins' [Fall 2021 CS 164 Syllabus](https://inst.eecs.berkeley.edu/~cs164/fa21/syllabus.html).
-
-### Be Aware of Your Actions
-
-Sometimes, the little things add up to creating an unwelcoming culture to some students. For example, you and a friend may think you are sharing in a private joke about other races, genders, or cultures, but this can have adverse effects on classmates who overhear it. There is a great deal of research on something called “stereotype threat,” which finds simply reminding someone that they belong to a particular culture or share a particular identity (on whatever dimension) can interfere with their course performance.
-
-Stereotype threat works both ways: you can assume that a student will struggle based on who they appear to be, or you can assume that a student is doing great based on who they appear to be. Both are potentially harmful.
-
-Bear in mind that diversity has many facets, some of which are not visible. Your classmates may have medical conditions (physical or mental), personal situations (financial, family, etc.), or interests that aren’t common to most students in the course. Another aspect of professionalism is avoiding comments that (likely unintentionally) put down colleagues for situations they cannot control. Bragging in open space that an assignment is easy or “crazy,” for example, can send subtle cues that discourage classmates who are dealing with issues that you can’t see. Please take care, so we can create a class in which all students feel supported and respected.
-
-### Be Respectful
-
-Beyond the slips that many of us make unintentionally are a host of behaviors that the course staff, department, and university do not tolerate. These are generally classified under the term harassment; sexual harassment is a specific form that is governed by federal laws known as Title IX.
-
-UC Berkeley’s Title IX website provides many resources for understanding the terms, procedures, and policies around harassment. Make sure you are aware enough of these issues to avoid crossing a line in your interactions with other students. For example, repeatedly asking another student out on a date after they have said no can cross this line.
-
-Your reaction to this topic might be to laugh it off, or to make or think snide remarks about “political correctness” or jokes about consent or other things. You might think people just need to grow a thicker skin or learn to take a joke. This isn’t your decision to make. Research shows the consequences (emotional as well as physical) on people who experience harassment. When your behavior forces another student to focus on something other than their education, you have crossed a line. You have no right to take someone else’s education away from them.
-
-This issue is very important to Data 100's course staff. Therefore, if we cannot appeal to your decency and collegiality, let us at least appeal to your self-interest. Do not mess around on this matter. It will not go well for you.
-
-### Issues with Course Staff
-
-Professionalism and respect for diversity are not just matters between students; they also apply to how the course staff treat the students. The staff of this course will treat you in a way that respects our differences. However, despite our best efforts, we might slip up, hopefully inadvertently. If you are concerned about classroom environment issues created by the staff or overall class dynamic, please feel free to talk to us about it. The instructors and the head GSIs in particular welcome any comments or concerns regarding conduct of the course and the staff.
-
-We are committed to creating a learning environment welcoming of all students that supports a diversity of thoughts, perspectives and experiences and respects your identities and backgrounds (including race, ethnicity, nationality, gender identity, socioeconomic class, sexual orientation, language, religion, ability, and more.) To help accomplish this:
-
-- If your name and/or pronouns differ from those that appear in your official records, please let us know.
-- If you feel like your performance in the class is being affected by your experiences outside of class (e.g., family matters, current events), please don’t hesitate to come and talk with us. We want to be resources for you.
-- We (like many people) are still in the process of learning about diverse perspectives and identities. If something was said in class (by anyone) that made you feel uncomfortable, please talk to us about it.
-<!-- Sometimes, you may not be comfortable bringing this up directly to us. If so, you are welcome to talk to the department’s Faculty Equity Advisor Prof. Fox (fox@berkeley.edu).  -->
-- While the course staff understands that improving diversity, equity, and inclusion (DEI) are not enough to overcome systemic issues in academia such as racism, queerphobia, and other forms of discrimination and hatred, we also recognize the importance of DEI work.
-  - The Data Science Department has some resources available at [https://data.berkeley.edu/about/diversity-equity-and-inclusion](https://data.berkeley.edu/about/diversity-equity-and-inclusion).
-  - There’s also a great set of resources available at [https://eecs.berkeley.edu/resources/students/grievances](https://eecs.berkeley.edu/resources/students/grievances).
-- If there are other resources you think we should list here, let us know!
-
-**We will take all complaints about unprofessional or discriminatory behavior seriously.**
-
-<a name = 'format'></a>
-
-## Hybrid Format
-
-This fall, Data 100 will be run in a hybrid format. This section details exactly how each component of the course will operate. But here’s a nice high-level “typical week in the course”:
-
-|  Mo | Tu | We | Th | Fr |
-| --- | --- | --- | --- | --- |
-| Office Hours | Office Hours | Office Hours | Office Hours | Office Hours |
-| | <span style="color:Green">Lecture released</span> | | <span style="color:Green">Lecture released</span> | |
-| | <span style="color:Purple">Lab Section</span> | | | <span style="color:Blue">Discussion Section</span> |
-| | | | <span style="color:Red">**Homework due**</span> | <span style="color:Red">**Homework released**</span> |
-| | <span style="color:Purple">**Lab due**</span> | | | <span style="color:Purple"> **Lab released**</span> |
-
-
-Note that these deadlines are subject to change.
-
-- To see when any live events are scheduled, check the [Calendar](../calendar).
-- To see when lectures, discussions, and assignments are released (and due), check the [Home Page](../).
-
-<br>
-
-**Note: In-person meetings are fully dependent on public health guidelines. We are prepared to hold all course activities online should circumstances demand.**
-
-<br>
-
-### Lecture
-
-- There are 2 lectures per week.
-- **Regular lectures will be pre-recorded**, in a format that is optimized for online learning (short 5-10 minute videos with optional conceptual problems in between). Lecture videos will be released on the mornings of Tuesday and Thursday.
-  - Many of these will be from previous semesters, but some will be recorded this fall by the instructors.
-  - Lecture videos will be posted on YouTube. Each “lecture” will be an html page linked on the course website, containing videos and links to slides and code.
-  - There are "Quick Check" conceptual questions in between each lecture video, linked on the lecture webpage. See below for more details.
-  - Each lecture will also have a Piazza thread for students to ask questions.
-
-We will have some guest speakers this term, on topics including Human Context and Ethics of Data Science and applications to Climate Change. **These lectures will be held live on Zoom**, and we strongly encourage you to attend them!
-
-<!-- Note: Alongside each lecture are textbook readings. Textbook readings are purely supplementary, and may contain material that is not in scope (and may also not be comprehensive). -->
-
-<br>
-
-### Discussions
-
-This course has discussion sections on Fridays, lasting for one hour. The goal of these sessions is to work through problems, hone your skills, and flesh out your understanding as part of a team. The problems that you solve and present as part of discussion are important in understanding this material.
-
-To encourage attendance and participation in live discussion, we will offer the option of having discussion contribute to your grade. Specifically, points you earn from attending/participating in discussion can reduce the weighting of homeworks on your overall course grade. See the course policies for more details.
-
-- **You must be assigned to a discussion section, even if you don't intend on attending the section.**
-- In a typical week, we will release the discussion worksheet on Friday morning.
-- We will be holding live discussion sections on Fridays. You will sign up for a section, but attendance will not be required.
-  - **Unlike past semesters, live discussions will not provide physical handouts.**
-  - Attendance points will only be given for the section you are assigned to, but you may attend any of the online sections. However, due to room restrictions, you may not attend an in-person section that you were not assigned to.
-- We will release discussion recordings or walkthroughs the week after the discussion.
-  - These will be videos from past semesters, so they may not be up-to-date with the current content. Unfortunately, we do not have the capacity to record walkthroughs this semester.
-
-
-<br>
-
-### Quick Checks
-
-Quick Checks, as mentioned above, are short conceptual questions embedded into each lecture, in the form of Google Forms. **Quick Checks are not graded.** These are meant for you to check your understanding of the concepts that were just introduced. <!-- Since there are roughly 26 lectures, there are roughly 26 Quick Checks, each of which consists of 4-7 Google Forms. -->
-
-<!-- That is, your score on them does not matter, you just need to do them. For each lecture, you will be required to submit a code to Gradescope that you will receive after completing one of the Google Forms for that lecture. These are due the Monday after the lecture is released. (Though we will assign grades using Gradescope, we will also collect emails on the Google Forms themselves.) -->
-
-<br>
-
-### Homeworks
-
-Homeworks are week-long assignments that are designed to help students develop an in-depth understanding of both the theoretical and practical aspects of ideas presented in lecture.
-
-- In a typical week, the homework is released on Friday and is due the following Thursday at 11:59PM.
-<!-- - Near the midterm, or during weeks in which a project is assigned, you will have more than one week to work on the current assignment. -->
-- One or two homeworks will be on-paper written assignments; the rest will be Jupyter notebooks.
-- Homeworks have both visible and hidden autograder tests. The visible tests are mainly sanity checks, e.g. a probability is <= 1, and are visible to students while they do the assignment. The hidden tests generally check for correctness, and are invisible to students while they are doing the assignment.
-- The primary form of support students will have for homeworks and projects are the **office hours** we’ll host, and **Piazza**.
-- Homeworks must be completed individually.
-
-<br>
-
-### Labs
-
-Labs are shorter programming assignments designed to give students familiarity with new ideas.
-
-- In a typical week, the lab is released on Friday and is due the following Tuesday at 11:59PM.
-- All lab autograder tests are visible.
-<!-- - To help with lab, we will host **live lab sections** on Monday at various times, in which GSIs will walk through the assignment via Zoom. See the [Calendar](../calendar) for when these are scheduled. -->
-- To help with lab, we will host live lab sections on Tuesday. You will sign up for a section, but attendance will not be required.
-- Students can get help with labs in **lab section**, **office hours**, and on **Piazza**. However, the best place to get help is lab section.
-
-<br>
-
-### Office Hours
-
-- The office hours are listed on the [Calendar](../calendar), and will be held both virtually and in-person.
-- Students can come to office hours for any questions on course assignments or material.
-- In-person office hours will be held in various locations specified in the [Calendar](../calendar). **To adhere to public health guidelines, we ask that students leave the OH room after their questions have been answered**.
-- Virtual OH can be accessed via [oh.ds100.org](https://oh.ds100.org/), where students add themselves to the “queue” and specify the assignment they need help on.
-<!-- where students add themselves to the "queue" and specify the assignment they need help on. Once it's their turn, they will be provided with a Zoom link to join, in order to get help from staff. -->
-- The instructors will also be hosting office hours. These will be reflected on the [Calendar](../calendar).
-<!-- - We are also holding "lost office hours" once a week. These are designed to accommodate students who are behind on material and would like help catching up. These are meant for conceptual questions only, not for assignment help. These will also be reflected on the [Calendar](../calendar). -->
-
-<br>
-
-### Midterm
-
-There will be one midterm exam, on **November 1st** (7-9PM PDT).
-
-The exam will be primarily virtual and zoom proctored, following campus guidelines. We will have the option to be proctored in-person, but you will still be completing the exam online (just being in-person proctored instead of zoom proctored). In-person spots will be given on a case by case basis by only those who necessarily need it (form coming soon).
-
-- Two time options will be offered to cover various timezones. No further alternates will be offered.
-- DSP students will be offered on-campus exam taking as per their accommodations.
-
-<br>
-
-### Final Project
-
-In lieu of a final exam, we will have a final project. The details of this project will be released on **TBD**, and it will be due **TBD** (during RRR or finals week).
-
-- You will create 3-person groups, where all the group members are in your discussion section.
-- We will offer a few (2-3) dataset options, as well as suggestions for the project.
-
-<br>
-
-### Regrade Requests
-
-Students will be allowed to submit regrade requests for the autograded and written portions of assignments in cases in which the rubric was incorrectly applied or the autograder scored their submission incorrectly. Regrades for the written portions of assignments will be handled through Gradescope, and autograder regrades via a Google Form.
-
-**Always check that the autograder executes correctly!** Gradescope will show you the output of the public tests, and you should see the same results as you did on DataHub. If you see a discrepancy, ensure that you have exported the assignment correctly and, if there is still an issue, post on Piazza _as soon as possible_.
-
-Regrade requests will **not** be considered in cases in which:
-
-- a student uploads the incorrect file to the autograder
-- the autograder fails to execute and the student does not notify the course staff _before the assignment deadline_
-- a student fails to save their notebook before exporting and uploads an old version to the autograder
-- a situation arises in which the course staff cannot ensure that the student's work was done before the assignment deadline
-- a students submits without following the steps outlined in [@13](https://piazza.com/class/kqsiwfz12g0482?cid=13)
-
-<br>
-
-<a name = 'policies'></a>
-
-## Policies
-
- **Data C100 Grading Scheme**
-
-| Category | Weight | Details |
-| --- | --- | --- |
-| Homeworks | 35% | 13 + 1 optional, with 2 drops |
-| Labs | 10% | 14, with 3 drops |
-| Midterm Exam | 25% | |
-| Final Project | 30% | |
-
- **Data C200 Grading Scheme**
-
-| Category | Weight | Details |
-| --- | --- | --- |
-| Homeworks | 35% | 13 + 1 optional, with 2 drops |
-| Midterm Exam | 25% | |
-| Final Project | 40% | |
-
-**For C100/C200 optional:** You may shift 5% of your HW grade to discussion attendance via [this Google form](https://forms.gle/YfT3KunoRm2U9oA39). There will be 3 drops.
-
-<br>
-
-### Late Policy
-
-All assignments are due at 11:59 pm on the due date specified on the syllabus. **Gradescope is where all assignments are submitted. Homeworks and labs will not be accepted late.** Gradescope may allow you to make late submissions, but you will later be given a 0.
-
-Extensions are only provided to students with DSP accommodations, or in the case of exceptional circumstances. If you have DSP accommodations, you should expect to receive an email from us. Otherwise, email [snhing@berkeley.edu](mailto:snhing@berkeley.edu to request an extension. If you make a request close to the deadline, we can not guarantee that you will receive a response before the deadline. Additionally, simply submitting a request does not guarantee you will receive an extension. Even if your work is incomplete, please submit before the deadline so you can receive credit for the work you did complete.
-
-Note that extension requests will not be granted in cases where a student’s local (DataHub) tests are not passing. It is the student’s responsibility to solve such problems in advance of the deadline.
-
-- Projects are marked down by 10% per day, **up to two days**. After two days, project submissions will not be accepted.
-  - Submission times are rounded up to the next day. That is, 2 minutes late = 1 day late.
-
-<br>
-
-### Collaboration Policy and Academic Dishonesty
-
-We will be following the [EECS departmental policy on Academic Honesty](https://eecs.berkeley.edu/resources/students/academic-dishonesty), which states that using work or resources that are not your own or not permitted by the course may lead to disciplinary actions, up to and including a failing grade in the course.
-
-#### Assignments
-
-Data science is a collaborative activity. While you may talk with others about the homework, we ask that you write your solutions individually in your own words. If you do discuss the assignments with others please include their names at the top of your notebook. Keep in mind that content from assignments will likely be covered on both the midterm and final.
-
-If we suspect that you have submitted plagiarized work, we will call you in for a meeting. If we then determine that plagiarism has occurred, we reserve the right to give you a negative full score (-100%) or lower on the assignments in question, along with reporting your offense to the Center of Student Conduct.
-
-Rather than copying someone else's work, ask for help. You are not alone in this course! The entire staff is here to help you succeed. If you invest the time to learn the material and complete the assignments, you won't need to copy any answers. (taken from [61A](https://cs61a.org/articles/about/#academic-honesty))
-
-We also ask that you **do not post your assignment solutions publicly**.
-
-#### Exams
-
-Cheating on exams is a serious offense. We have methods of detecting cheating on exams – so don't do it! Students caught cheating on any exam will fail this course.
-
-<br>
-
-### We want you to succeed!
-
-If you are feeling overwhelmed, visit our office hours and talk with us. We know college can be stressful – and especially so during the COVID-19 pandemic – and we want to help you succeed.
-
-<a name = 'resources'></a>
-
-## Resources
-**Important Note**: We are committed to being a resource to you, but it is important to note that all members of the teaching staff for this course are [responsible employees](https://svsh.berkeley.edu/responsible-employee), meaning that **we must disclose any incidents of sexual harassment or violence to campus authorities**. If you would like to speak to a confidential advocate, please consider reaching out to the [Berkeley PATH to Care Center](https://care.berkeley.edu/).
-
-This section is inspired and adapted with permission from Dr. Sarah Chasins' [Fall 2021 CS 164 Syllabus](https://inst.eecs.berkeley.edu/~cs164/fa21/syllabus.html).
-
-<a name = 'acknowledgments'></a>
-
-## Acknowledgments!
-
-Course Culture and Resources inspired and adapted with permission from Dr. Sarah Chasins' [Fall 2021 CS 164 Syllabus](https://inst.eecs.berkeley.edu/~cs164/fa21/syllabus.html).
+Our classroom is a collaborative and inclusive learning environment. We encourage active participation, respectful dialogue, and a supportive atmosphere where everyone feels comfortable asking questions and sharing ideas. Given the hands-on nature of programming, learning from mistakes and helping peers is highly valued. We believe that diverse perspectives enrich the learning experience, and we are committed to fostering an environment free from harassment and discrimination. Your active engagement, curiosity, and willingness to help others will contribute significantly to the success of this course.
+
+## Academic Dishonesty
+
+Academic integrity is paramount in this course. All work submitted must be your own original effort. While collaboration on concepts and debugging is encouraged in the lab sessions, particularly in a Software Carpentry-style environment, direct copying of code or solutions is strictly prohibited. This includes, but is not limited to:
+
+- Submitting work that is not your own.
+- Copying code from another student or any unauthorized online source without proper citation.
+- Allowing another student to copy your work.
+- Plagiarizing text or code from any source.
+- Misrepresenting data or results.
+- Using unauthorized materials during quizzes or exams.
+
+Any instance of academic dishonesty will result in serious consequences, as per the university's academic integrity policies, which may include a failing grade for the assignment or the course, and referral to the disciplinary committee. When in doubt about what constitutes acceptable collaboration, please ask the instructors or TAs.
+
+## Course Overview
+
+### Core Modules
+The course is structured around four core modules:
+**CORE PYTHON FOR BIOLOGISTS: THE BASICS** 
+    * Basic syntax, data types, data structures, conditional statements, loops and functions. 
+**ORGANIZING DATA AND INTERACTING WITH FILES** 
+    * Dictionaries and File I/O operations. 
+**BIOPYTHON: THE BIOLOGIST'S TOOLKIT** 
+    * Biopython Library, Seq and SeqRecord Object. SeqIO module for sequence files. 
+**APPLYING PYTHON & BIOPYTHON TO BIOLOGICAL PROBLEM** 
+    * Biopython's pairwise2, accessing online databases like NCBI via Bio.Entrez. 
+
+### Course Objective and Outcome
+**Objective:** 
+    * To introduce fundamental programming concepts and their application using Python. 
+    * To familiarize students with the principles of computational handling of biological data. 
+    * To teach the use of the Biopython library for standard bioinformatics tasks. 
+    * To introduce key Python libraries for numerical and tabular data analysis in biology (e.g., NumPy, Pandas). 
+**Outcome:** 
+    * Write and execute basic Python programs to manipulate biological data. 
+    * Read, parse, and write various biological file formats programmatically. 
+    * Utilize Biopython for tasks such as sequence analysis, database querying, and simple alignment. 
+    * Perform basic data analysis on biological datasets using relevant Python libraries. 
+    * Apply learned programming and computational skills to address introductory problems in computational biology. 
+
+### Course Contents (Maximum 100 words)
+This course provides a foundation in Python programming for biology (BT/CB) students. It covers fundamental concepts like syntax, data types, control flow, and functions, tailored with biological examples. Key skills include handling biological data using lists and dictionaries, and reading/writing various file formats. The course also focusses on the Biopython library for sequence manipulation, file parsing (FASTA, GenBank), sequence alignment, and database access. Finally, it introduces using libraries like NumPy and Pandas for biological data analysis, enabling students to solve practical computational problems in biology. 
+
+## Lecture Outline
+
+| Module No. | Topic | Number of hours |
+| :--------- | :---- | :-------------- |
+| 1       | Core Python for Biologists: The Basics | 11  |
+| 2       | Organizing Data and Interacting with Files | 11  |
+| 3       | Biopython: The Biologist's Toolkit | 10  |
+| 4       | Applying Python & Biopython to Biological Problem | 10  |
+
+**Detailed Module Descriptions:**
+**Module 1 (Core Python for Biologists: The Basics):** This module introduces the fundamentals in python programming concepts tailored for students with a biology background. This covers the rationale for programming in biological research, setting up python environment, understanding the basic syntax, variables, data types (integers, floats, strings and booleans) and performing string manipulations (indexing and slicing) of biological sequences. The module also introduces data structures (lists and tuples) and teaches control flow using conditional statements (if/elif/else) and loops (for/while) to manage program logic. Finally, it covers the creation and use of functions to write reusable code blocks for simple biological tasks and basic debugging techniques. 
+**Module 2 (Organizing Data and Interacting with Files):** Building upon Python fundamentals, this module focuses on effectively structuring data and handling file input/output, which is critical for biological data analysis. Students will learn to use dictionaries for storing and accessing data in key-value pairs, (as in gff/gtf files). The module covers working with file paths and reading from/writing to various file types, including plain text and delimited formats like TSV and CSV. It introduces methods for parsing simple biological file formats using core Python, enabling students to extract and process data from files by combining loops, conditionals, functions, lists, and dictionaries. 
+**Module 3 (Biopython: The Biologist's Toolkit):** This module introduces the Biopython library. It covers installing Biopython and utilizing its core objects: the Seq object for representing and manipulating biological sequences (DNA, RNA, and Protein) and the SeqRecord object for bundling sequences with descriptive metadata. A key focus is the SeqIO module for efficient reading and writing of common biological file formats like FASTA, GenBank, and basic FASTQ, enabling students to easily handle and parse biological data. 
+**Module 4 (Applying Python & Biopython to Biological Problem):** Building on the previous modules, this module applies integrated Python and Biopython skills to solve practical computational biology problems.  It includes performing sequence alignments using Biopython's `pairwise2`, accessing online databases like NCBI via `Bio.Entrez` to retrieve biological data, and parsing BLAST results. The module introduces essential libraries for handling numerical and tabular biological data: NumPy for array manipulation and Pandas for working with DataFrames, commonly used for data like expression values. It also introduces Regular Expressions (`re` module) for powerful pattern matching in biological text. It introduces the foundational concepts of DNA language models and their role in sequence analysis, exploring their potential applications and limitations. 
+
+**Course Total Lectures:** 42 
+
+**Brief description of tutorials:** NIL 
+
+## Laboratory Component
+
+**Brief description of Laboratory:**
+The lab component of this course is designed to provide hands-on practice with the Python programming language and the Biopython library, directly complementing the course lectures.  Students will work through practical exercises and problems using biological datasets, reinforcing fundamental concepts in Python programming, data handling, and file manipulation.  The lab sessions will focus on building essential skills in writing, debugging, and executing code, and applying learned concepts from Biopython for tasks like sequence analysis, file parsing, and database interaction in a guided environment (software carpentry style), ensuring students gain practical experience in computational biology techniques. 
+
+## Week-wise Teaching Plan
+
+| Week | Topic |
+| :--- | :---- |
+| 1    | Introduction to Programming & Python Fundamentals: Why program in biology, setup, basic syntax, variables, data types (numbers, strings), simple string manipulation, errors.  |
+| 2    | More String Manipulation & Collections: String indexing, slicing, methods; Introduction to lists and tuples; Simple for loops.  |
+| 3    | Control Flow & Functions: Conditional statements (if/elif/else), comparison/logical operators; while loops; Defining and calling functions.  |
+| 4    | Functions Revisited & Dictionaries: Function arguments, return values, scope, writing reusable functions; Introduction to dictionaries (creation, access, iteration).  |
+| 5    | File Input/Output (I/O): Opening, reading (read, readline, readlines), and writing text files; File paths and basic OS interaction.  |
+| 6    | Parsing Files with Basic Python: Combining file I/O with loops, conditionals, and data structures; Parsing simple delimited files (CSV); Basic FASTA parsing using core Python.  |
+| 7    | Introduction to Biopython & Seq Objects: Biopython overview, installation; Seq object (creation, alphabets, basic methods like transcription, translation, reverse complement).  |
+| 8    | SeqRecord and Basic Annotation: The SeqRecord object (sequence + metadata); Creating and accessing SeqRecord components; Introduction to basic annotations.  |
+| 9    | Biopython File I/O (SeqIO): SeqIO module (parsing and writing standard formats - FASTA, GenBank, basic FASTQ); Iterating over multiple records.  |
+| 10   | Database Access & Advanced Parsing: SeqIO continued (extracting detailed info); Bio.Entrez (accessing NCBI databases - searching and fetching records).  |
+| 11   | Sequence Comparison & Pattern Matching: Pairwise sequence alignment (Bio.pairwise2); Introduction to Regular Expressions (re module) for biological patterns.  |
+| 12   | Data Analysis Libraries & Integration: Introduction to NumPy (arrays for numerical data); Introduction to Pandas (DataFrames for tabular data); Case study or mini-project integrating skills from all modules.  |
+
+## Lab Sessions
+
+| Week | Topic | Lab Activity |
+| :--- | :---- | :----------- |
+| 1    | Introduction & Python Fundamentals | Getting Started: Install Python (miniconda3) and IDE (jupyter-lab). Write and run simple scripts (print(), variables, basic arithmetic). Practice identifying and fixing syntax errors.  |
+| 2    | String Manipulation & Collections | Sequence Basics: Practice string indexing and slicing on DNA/protein sequences. Use string methods (.upper(), .lower(), .count(), .find()) to analyze simple sequences. Create and manipulate lists of sequences or biological items.  |
+| 3    | Control Flow & Functions | Decision Making & Reusability: Implement conditional logic (if/elif/else) to filter sequences based on criteria (e.g., seq length, GC content). Use for and while loops to iterate through sequences or lists. Write and test simple functions for biological calculations (e.g., GC content function).  |
+| 4    | Functions Revisited & Dictionaries | Organizing Data: Practice writing functions with different types of arguments and return values. Implement biological lookups using dictionaries (e.g., DNA to RNA table, amino acid codon table).  |
+| 5    | File Input/Output (I/O) | Working with Files: Write scripts to read data from simple text files (e.g., a list of genes). Practice writing processed data or results to a new output file.  |
+| 6    | Parsing Files with Basic Python | Processing File Data: Write scripts to parse simple delimited files (CSV, TSV) and extract relevant data. Develop and use a basic Python function to parse a simplified FASTA file format line by line.  |
+| 7    | Introduction to Biopython & Seq Objects | Introducing Biopython: Install Biopython. Create and manipulate Seq objects. Practice using Seq object methods for transcription, translation, and reverse complement on sample sequences.  |
+| 8    | SeqRecord and Basic Annotation | Sequence Records: Create SeqRecord objects for sequences, adding ID, description, and basic annotations. Practice accessing and modifying information within SeqRecord objects.  |
+| 9    | Biopython File I/O (SeqIO) | Biopython File Handling: Use the SeqIO module to read multiple sequences from a multi-FASTA file. Parse a sample GenBank file and extract sequence and basic annotation information using SeqIO. Practice writing SeqRecord objects to different file formats.  |
+| 10   | Database Access & Advanced Parsing | Online Data Retrieval: Use Bio.Entrez to search for sequence records on NCBI (e.g., Nucleotide or Protein database) and fetch sequences. Practice parsing more detailed features from SeqIO objects (e.g., CDS, gene features).  |
+| 11   | Sequence Comparison & Pattern Matching | Alignment & Regex: Perform pairwise sequence alignments using Bio.pairwise2. Practice using the re module to find more complex patterns (e.g., restriction sites with ambiguity codes, protein motifs) in sequences using regular expressions.  |
+| 12   | Data Analysis Libraries & Integration | Basic Data Analysis & Project Prep: Introduce NumPy arrays and perform basic operations (e.g., simple statistical calculations on a list of measurements). Introduce Pandas DataFrames by loading a small CSV file into a DataFrame and accessing columns/rows. Work on exercises that combine Python, Biopython, and potentially NumPy/Pandas to solve a small integrated problem (e.g., process a small dataset derived from a file or online query).  |
+
+## Suggested Texts and Reference Books
+
+1.  Antao, T. (2022). *Bioinformatics with Python Cookbook: Use modern Python libraries and applications to solve real-world computational biology problems* (3rd ed.). Packt Publishing. 
+2.  Biopython Project. *Biopython Tutorial and Cookbook*. (This is the primary documentation for the Biopython library). 
+3.  Jones, M. (2013). *Python for Biologists: A complete programming course for beginners*. 
+4.  Jones, M. (2014). *Advanced Python for Biologists*. 
+5.  Model, M. L. (2009). *Bioinformatics Programming Using Python: Practical Programming for Biological Data*. O'Reilly Media. 
+6.  Stevens, T. J., & Boucher, W. (2015). *Python Programming for Biology: Bioinformatics and Beyond*. Cambridge University Press. 
+
+## Suggested Assessment
+
+* (Lab) Minor 1: 25% 
+* (Lab) Minor 2: 25% 
+* Internal quizzes (Weekly Quiz - 12 Total): 20% 
+* End term exam: 30%
