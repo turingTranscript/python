@@ -10,31 +10,19 @@ description: >-
 
 <!-- ## Note: This page is under construction. Everything on this website is subject to change. -->
 
-Jump to:
-
-- [About Data 100](#about)
-- [Course Culture](#course_culture)
-- [Hybrid Format](#format)
-- [Policies](#policies)
-- [Resources](#resources)
-
-<br>
-
-<a name = 'about'></a>
-
 # Python & Biopython Course Syllabus
 
 ## Course Information
-**Course Code:** BT 2113 
-**Course Name:** Python & Biopython 
-**Credits:** 2 (1-0-2) 
-**Course Position:** Semester III 
-**Department offering the course:** Centre for Life Sciences 
-**Level:** Pre-Ph.D./Core for UG 2nd year 
-**Any pre-requisite course:** None 
-**Overlap with any existing course:** None 
-**Frequency of offering:** Every Fall 
-**Faculty who will teach the course:** Dr. Balan Ramesh 
+**Course Code:** BT 2113  
+**Course Name:** Python & Biopython  
+**Credits:** 2 (1-0-2)  
+**Course Position:** Semester III  
+**Department offering the course:** Centre for Life Sciences  
+**Level:** Pre-Ph.D./Core for UG 2nd year  
+**Any pre-requisite course:** None  
+**Overlap with any existing course:** None  
+**Frequency of offering:** Every Fall  
+**Faculty who will teach the course:** Dr. Balan Ramesh  
 
 ## Course Culture
 
@@ -57,27 +45,28 @@ Any instance of academic dishonesty will result in serious consequences, as per 
 
 ### Core Modules
 The course is structured around four core modules:
-**CORE PYTHON FOR BIOLOGISTS: THE BASICS** 
-    * Basic syntax, data types, data structures, conditional statements, loops and functions. 
-**ORGANIZING DATA AND INTERACTING WITH FILES** 
-    * Dictionaries and File I/O operations. 
-**BIOPYTHON: THE BIOLOGIST'S TOOLKIT** 
-    * Biopython Library, Seq and SeqRecord Object. SeqIO module for sequence files. 
-**APPLYING PYTHON & BIOPYTHON TO BIOLOGICAL PROBLEM** 
-    * Biopython's pairwise2, accessing online databases like NCBI via Bio.Entrez. 
+**CORE PYTHON FOR BIOLOGISTS: THE BASICS**  
+    * Basic syntax, data types, data structures, conditional statements, loops and functions.  
+**ORGANIZING DATA AND INTERACTING WITH FILES**  
+    * Dictionaries and File I/O operations.  
+**BIOPYTHON: THE BIOLOGIST'S TOOLKIT**  
+    * Biopython Library, Seq and SeqRecord Object. SeqIO module for sequence files.  
+**APPLYING PYTHON & BIOPYTHON TO BIOLOGICAL PROBLEM**  
+    * Biopython's pairwise2, accessing online databases like NCBI via Bio.Entrez.  
 
-### Course Objective and Outcome
+### Course Objective and Outcome  
+
 **Objective:** 
-    * To introduce fundamental programming concepts and their application using Python. 
-    * To familiarize students with the principles of computational handling of biological data. 
-    * To teach the use of the Biopython library for standard bioinformatics tasks. 
-    * To introduce key Python libraries for numerical and tabular data analysis in biology (e.g., NumPy, Pandas). 
+    - To introduce fundamental programming concepts and their application using Python.  
+    - To familiarize students with the principles of computational handling of biological data.  
+    - To teach the use of the Biopython library for standard bioinformatics tasks.  
+    - To introduce key Python libraries for numerical and tabular data analysis in biology (e.g., NumPy, Pandas).  
 **Outcome:** 
-    * Write and execute basic Python programs to manipulate biological data. 
-    * Read, parse, and write various biological file formats programmatically. 
-    * Utilize Biopython for tasks such as sequence analysis, database querying, and simple alignment. 
-    * Perform basic data analysis on biological datasets using relevant Python libraries. 
-    * Apply learned programming and computational skills to address introductory problems in computational biology. 
+    - Write and execute basic Python programs to manipulate biological data.  
+    - Read, parse, and write various biological file formats programmatically.  
+    - Utilize Biopython for tasks such as sequence analysis, database querying, and simple alignment.  
+    - Perform basic data analysis on biological datasets using relevant Python libraries.  
+    - Apply learned programming and computational skills to address introductory problems in computational biology.  
 
 ### Course Contents (Maximum 100 words)
 This course provides a foundation in Python programming for biology (BT/CB) students. It covers fundamental concepts like syntax, data types, control flow, and functions, tailored with biological examples. Key skills include handling biological data using lists and dictionaries, and reading/writing various file formats. The course also focusses on the Biopython library for sequence manipulation, file parsing (FASTA, GenBank), sequence alignment, and database access. Finally, it introduces using libraries like NumPy and Pandas for biological data analysis, enabling students to solve practical computational problems in biology. 
@@ -91,10 +80,11 @@ This course provides a foundation in Python programming for biology (BT/CB) stud
 | 3       | Biopython: The Biologist's Toolkit | 10  |
 | 4       | Applying Python & Biopython to Biological Problem | 10  |
 
-**Detailed Module Descriptions:**
-**Module 1 (Core Python for Biologists: The Basics):** This module introduces the fundamentals in python programming concepts tailored for students with a biology background. This covers the rationale for programming in biological research, setting up python environment, understanding the basic syntax, variables, data types (integers, floats, strings and booleans) and performing string manipulations (indexing and slicing) of biological sequences. The module also introduces data structures (lists and tuples) and teaches control flow using conditional statements (if/elif/else) and loops (for/while) to manage program logic. Finally, it covers the creation and use of functions to write reusable code blocks for simple biological tasks and basic debugging techniques. 
-**Module 2 (Organizing Data and Interacting with Files):** Building upon Python fundamentals, this module focuses on effectively structuring data and handling file input/output, which is critical for biological data analysis. Students will learn to use dictionaries for storing and accessing data in key-value pairs, (as in gff/gtf files). The module covers working with file paths and reading from/writing to various file types, including plain text and delimited formats like TSV and CSV. It introduces methods for parsing simple biological file formats using core Python, enabling students to extract and process data from files by combining loops, conditionals, functions, lists, and dictionaries. 
-**Module 3 (Biopython: The Biologist's Toolkit):** This module introduces the Biopython library. It covers installing Biopython and utilizing its core objects: the Seq object for representing and manipulating biological sequences (DNA, RNA, and Protein) and the SeqRecord object for bundling sequences with descriptive metadata. A key focus is the SeqIO module for efficient reading and writing of common biological file formats like FASTA, GenBank, and basic FASTQ, enabling students to easily handle and parse biological data. 
+**Detailed Module Descriptions:**  
+
+**Module 1 (Core Python for Biologists: The Basics):** This module introduces the fundamentals in python programming concepts tailored for students with a biology background. This covers the rationale for programming in biological research, setting up python environment, understanding the basic syntax, variables, data types (integers, floats, strings and booleans) and performing string manipulations (indexing and slicing) of biological sequences. The module also introduces data structures (lists and tuples) and teaches control flow using conditional statements (if/elif/else) and loops (for/while) to manage program logic. Finally, it covers the creation and use of functions to write reusable code blocks for simple biological tasks and basic debugging techniques.  
+**Module 2 (Organizing Data and Interacting with Files):** Building upon Python fundamentals, this module focuses on effectively structuring data and handling file input/output, which is critical for biological data analysis. Students will learn to use dictionaries for storing and accessing data in key-value pairs, (as in gff/gtf files). The module covers working with file paths and reading from/writing to various file types, including plain text and delimited formats like TSV and CSV. It introduces methods for parsing simple biological file formats using core Python, enabling students to extract and process data from files by combining loops, conditionals, functions, lists, and dictionaries.  
+**Module 3 (Biopython: The Biologist's Toolkit):** This module introduces the Biopython library. It covers installing Biopython and utilizing its core objects: the Seq object for representing and manipulating biological sequences (DNA, RNA, and Protein) and the SeqRecord object for bundling sequences with descriptive metadata. A key focus is the SeqIO module for efficient reading and writing of common biological file formats like FASTA, GenBank, and basic FASTQ, enabling students to easily handle and parse biological data.  
 **Module 4 (Applying Python & Biopython to Biological Problem):** Building on the previous modules, this module applies integrated Python and Biopython skills to solve practical computational biology problems.  It includes performing sequence alignments using Biopython's `pairwise2`, accessing online databases like NCBI via `Bio.Entrez` to retrieve biological data, and parsing BLAST results. The module introduces essential libraries for handling numerical and tabular biological data: NumPy for array manipulation and Pandas for working with DataFrames, commonly used for data like expression values. It also introduces Regular Expressions (`re` module) for powerful pattern matching in biological text. It introduces the foundational concepts of DNA language models and their role in sequence analysis, exploring their potential applications and limitations. 
 
 **Course Total Lectures:** 42 

@@ -25,6 +25,13 @@ MU Hyderabad, Fall 2025
 
 </div>
 
+{% assign teaching_assistants = site.staffers | where: 'role', 'Teaching Assistant' %}
+<div class="role">
+  {% for staffer in teaching_assistants %}
+  {{ staffer }}
+  {% endfor %}
+</div>
+
 <ul>
 <!-- <li><b>THIS PAGE IS UNDER CONSTRUCTION. Please don’t interpret anything on this website as truth until this warning is removed. </b></li>
 <li>Please read our <a href="http://www.ds100.org/su21faq">course FAQ</a> before contacting staff with questions that might be answered there.</li>
