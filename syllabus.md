@@ -44,7 +44,7 @@ Any instance of academic dishonesty will result in serious consequences, as per 
 ## Course Overview
 
 ### Core Modules
-The course is structured around four core modules:
+The course is structured around four core modules:  
 **CORE PYTHON FOR BIOLOGISTS: THE BASICS**  
     * Basic syntax, data types, data structures, conditional statements, loops and functions.  
 **ORGANIZING DATA AND INTERACTING WITH FILES**  
