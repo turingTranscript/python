@@ -24,14 +24,10 @@ remote_theme: pmarsceill/just-the-docs@v0.2.5-release
 color_scheme: light
 search_enabled: true
 permalink: pretty
-# nav_links:
-#   Links:
-#     Datahub:
-#       - 'https://data100.datahub.berkeley.edu'
-#     Gradescope:
-#       - 'https://www.gradescope.com/courses/279047'
-#     Piazza:
-#       - 'https://piazza.com/class/kqsiwfz12g0482'
+nav_links:
+  Links:
+    Google Classroom:
+      - 'https://classroom.google.com/'
 
 aux_links:
   # 'Kevin Lin':
