@@ -11,7 +11,7 @@ description: Past exams and other relevant material to aid you in the course.
 | Week | Topic | Problem | Solution |
 | :--- | :---- | :------ | :------- |
 | 1 | Setting Up Your Python Environment & First Programs | [Lab 1 Problem](lab/lab01_problem) | [Lab 1 Solution](lab/lab01_solution) |
-| 2 | Working with Variables & Basic String Operations | [Lab 2 Problem](lab/lab02_problem) | [Lab 2 Solution](lab/lab02_solution) |
+| 2 | Working with Variables & Basic String Operations | [Lab 2 Problem](../lab/lab02_problem) | [Lab 2 Solution](lab/lab02_solution) |
 | 3 | Manipulating Lists for Biological Data | [Lab 3 Problem](lab/lab03_problem) | [Lab 3 Solution](lab/lab03_solution) |
 | 4 | Implementing Logic & Iterating Through Data | [Lab 4 Problem](lab/lab04_problem) | [Lab 4 Solution](lab/lab04_solution) |
 | 5 | Designing & Debugging Reusable Functions | [Lab 5 Problem](lab/lab05_problem) | [Lab 5 Solution](lab/lab05_solution) |
