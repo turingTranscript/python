@@ -43,51 +43,51 @@ You will practice debugging these functions, paying close attention to network c
 
 6.  Design and Implement Reusable Functions:
 
-    a.  `fetch_ncbi_records(id_list, db="protein", rettype="gb", retmode="text")`:
-        * Purpose: Takes a list of NCBI `id_list` (accession numbers or UIDs), database name (`db`), return type (`rettype`), and return mode (`retmode`).
-        * Uses `Entrez.efetch` to retrieve full records from NCBI.
-        * Parses the handle using `SeqIO.parse` (if `db` is "nuccore" or "protein" and `rettype` is "fasta" or "gb") or `Entrez.read` for more complex XML data.
-        * Returns a list of `SeqRecord` objects (for protein/nucleotide databases) or a list of parsed Python objects (for other databases/retmodes). Handle `IOError` or `URLError` for network issues.
+    a.  `fetch_ncbi_records(id_list, db="protein", rettype="gb", retmode="text")`:  
+        * Purpose: Takes a list of NCBI `id_list` (accession numbers or UIDs), database name (`db`), return type (`rettype`), and return mode (`retmode`).  
+        * Uses `Entrez.efetch` to retrieve full records from NCBI.  
+        * Parses the handle using `SeqIO.parse` (if `db` is "nuccore" or "protein" and `rettype` is "fasta" or "gb") or `Entrez.read` for more complex XML data.  
+        * Returns a list of `SeqRecord` objects (for protein/nucleotide databases) or a list of parsed Python objects (for other databases/retmodes). Handle `IOError` or `URLError` for network issues.  
         * Example Usage: `protein_records = fetch_ncbi_records(protein_accessions, db="protein", rettype="gb")`
 
-    b.  `parse_simplified_blast_output(filepath)`:
-        * Purpose: Takes the `filepath` to your `simulated_blast_output.txt`.
-        * Reads the file, skips the header line (starting with `#`).
-        * Parses each subsequent line, splitting by tab delimiter.
-        * Extracts 'Query ID', 'Subject ID', '% Identity', 'E-value', and 'Bit Score'. Converts numerical values to floats.
-        * Returns a list of dictionaries, where each dictionary represents one BLAST hit.
+    b.  `parse_simplified_blast_output(filepath)`:  
+        * Purpose: Takes the `filepath` to your `simulated_blast_output.txt`.  
+        * Reads the file, skips the header line (starting with `#`).  
+        * Parses each subsequent line, splitting by tab delimiter.  
+        * Extracts 'Query ID', 'Subject ID', '% Identity', 'E-value', and 'Bit Score'. Converts numerical values to floats.  
+        * Returns a list of dictionaries, where each dictionary represents one BLAST hit.  
         * Example Usage: `blast_hits = parse_simplified_blast_output("simulated_blast_output.txt")`
 
-    c.  `filter_blast_hits(blast_hits_list, e_value_threshold, identity_threshold)`:
-        * Purpose: Takes a `blast_hits_list` (from `parse_simplified_blast_output`), an `e_value_threshold` (float), and an `identity_threshold` (float, percentage).
-        * Filters the list to include only hits where E-value is less than or equal to the threshold AND % Identity is greater than or equal to the threshold.
-        * Returns a new list of filtered hit dictionaries.
+    c.  `filter_blast_hits(blast_hits_list, e_value_threshold, identity_threshold)`:  
+        * Purpose: Takes a `blast_hits_list` (from `parse_simplified_blast_output`), an `e_value_threshold` (float), and an `identity_threshold` (float, percentage).  
+        * Filters the list to include only hits where E-value is less than or equal to the threshold AND % Identity is greater than or equal to the threshold.  
+        * Returns a new list of filtered hit dictionaries.  
         * Example Usage: `significant_hits = filter_blast_hits(blast_hits, 1e-10, 90.0)`
 
-    d.  `summarize_protein_records(protein_records)`:
-        * Purpose: Takes a list of `SeqRecord` objects.
-        * For each record, extracts and prints a summary including `ID`, `Description`, `Length`, and potentially a few features (if present in `record.features`).
-        * Example Usage: `summarize_protein_records(protein_records)`
+    d.  `summarize_protein_records(protein_records)`:  
+        * Purpose: Takes a list of `SeqRecord` objects.  
+        * For each record, extracts and prints a summary including `ID`, `Description`, `Length`, and potentially a few features (if present in `record.features`).  
+        * Example Usage: `summarize_protein_records(protein_records)`  
 
-4.  Integrate Functions for Workflow:
-    * Call `fetch_ncbi_records()` with `protein_accessions`.
-    * Call `summarize_protein_records()` to print details of the fetched proteins.
-    * Call `parse_simplified_blast_output()` with your `simulated_blast_output.txt`.
-    * Call `filter_blast_hits()` on the parsed results with chosen thresholds (e.g., E-value $1e-5$, Identity $80.0$).
-    * Print the filtered BLAST hits in a readable format.
+4.  Integrate Functions for Workflow:  
+    * Call `fetch_ncbi_records()` with `protein_accessions`.  
+    * Call `summarize_protein_records()` to print details of the fetched proteins.  
+    * Call `parse_simplified_blast_output()` with your `simulated_blast_output.txt`.  
+    * Call `filter_blast_hits()` on the parsed results with chosen thresholds (e.g., E-value $1e-5$, Identity $80.0$).  
+    * Print the filtered BLAST hits in a readable format.  
 
 5.  Debugging Exercise:
 
-    a.  Introduce a deliberate bug:
-        * In `fetch_ncbi_records`, use a wrong database name (e.g., "proteinX") or provide an invalid `rettype` or `retmode` combination that causes `SeqIO.parse` to fail or `Entrez.read` to return unexpected structure.
-        * In `simulated_blast_output.txt`, introduce a line with missing columns or a non-numerical value where a number is expected (e.g., "NaN" for E-value).
-        * In `parse_simplified_blast_output`, make an error in splitting the line or converting a string to a float, leading to a `ValueError` or `IndexError`.
-        * In `filter_blast_hits`, reverse the comparison logic for E-value (e.g., `>` instead of `<=`).
+    a.  Introduce a deliberate bug:  
+        * In `fetch_ncbi_records`, use a wrong database name (e.g., "proteinX") or provide an invalid `rettype` or `retmode` combination that causes `SeqIO.parse` to fail or `Entrez.read` to return unexpected structure.  
+        * In `simulated_blast_output.txt`, introduce a line with missing columns or a non-numerical value where a number is expected (e.g., "NaN" for E-value).  
+        * In `parse_simplified_blast_output`, make an error in splitting the line or converting a string to a float, leading to a `ValueError` or `IndexError`.  
+        * In `filter_blast_hits`, reverse the comparison logic for E-value (e.g., `>` instead of `<=`).  
         * Forget to handle potential `URLError` from `Entrez` if there's no internet connection.
-    b.  Identify the bug: Run your script and observe `ValueError`, `IndexError`, `URLError`, or incorrect filtered results. Biopython's `SeqIO` and `Entrez` often provide informative error messages.
-    c.  Use `print()` statements and `try-except` blocks for debugging:
-        * For `Entrez` calls: Wrap `Entrez.efetch` in a `try-except URLError` to catch network issues. `print()` the raw `handle.read()` content before parsing if you suspect parsing issues.
-        * For file parsing: `print()` each `line` before splitting it in `parse_simplified_blast_output`. `print()` the `parts` list after splitting. Use `try-except ValueError` around `float()` conversions.
-        * For filtering: `print()` the values of E-value and % Identity for each hit before applying the filter to confirm your filtering logic is correct.
-    d.  Fix the bug: Correct database/return type parameters, ensure robust parsing (e.g., `try-except` for type conversion), fix comparison logic, and add appropriate error handling for network requests.
-    e.  Verify the fix: Rerun the script. Test with problematic inputs (e.g., a non-existent protein ID in `fetch_ncbi_records`, a malformed line in BLAST output) to ensure functions handle them gracefully or provide clear error messages.
+    b.  Identify the bug: Run your script and observe `ValueError`, `IndexError`, `URLError`, or incorrect filtered results. Biopython's `SeqIO` and `Entrez` often provide informative error messages.  
+    c.  Use `print()` statements and `try-except` blocks for debugging:  
+        * For `Entrez` calls: Wrap `Entrez.efetch` in a `try-except URLError` to catch network issues. `print()` the raw `handle.read()` content before parsing if you suspect parsing issues.  
+        * For file parsing: `print()` each `line` before splitting it in `parse_simplified_blast_output`. `print()` the `parts` list after splitting. Use `try-except ValueError` around `float()` conversions.  
+        * For filtering: `print()` the values of E-value and % Identity for each hit before applying the filter to confirm your filtering logic is correct.  
+    d.  Fix the bug: Correct database/return type parameters, ensure robust parsing (e.g., `try-except` for type conversion), fix comparison logic, and add appropriate error handling for network requests.  
+    e.  Verify the fix: Rerun the script. Test with problematic inputs (e.g., a non-existent protein ID in `fetch_ncbi_records`, a malformed line in BLAST output) to ensure functions handle them gracefully or provide clear error messages.  
