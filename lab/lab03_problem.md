@@ -1,0 +1,17 @@
+---
+layout: page
+title: Lab 3 – Making Decisions (Conditional Statements)
+nav_exclude: true
+---
+
+## Lab 3: Identifying Risk Factors - Making Decisions (Conditional Statements)
+
+**Environmental Analysis:** Preliminary data suggests a link between disease in *Labeo bata* and elevated levels of ammonia, nitrite, and pesticides in their habitat. Alarmingly, these same toxins have been found in the South Asian River Dolphin’s environment, raising concerns about their role in increasing susceptibility to infections like Motile Aeromonas Septicemia (MAS). Investigating these environmental factors is crucial to understanding the health crisis affecting both species. Elevated ammonia and nitrite levels, often stemming from organic waste decomposition and agricultural runoff, are highly toxic to aquatic life. Ammonia damages gills and increases stress, weakening the immune system, while nitrite causes ”brown blood disease,” impairing oxygen transport. The presence of both indicates significant nitrogen pollution and a stressed aquatic environment, potentially compromising the physiological functions of both *Labeo bata* and South Asian River Dolphins, making them more vulnerable to opportunistic pathogens like *Aeromonas*. Pesticide contamination, primarily from agricultural runoff, poses another significant threat. These chemicals can have neurotoxic effects, disrupt endocrine systems, and critically, suppress the immune systems of aquatic animals. For the South Asian River Dolphin, immunosuppression caused by pesticides could directly lead to increased susceptibility to MAS, while neurological impacts might further endanger their survival. Identifying the specific types and concentrations of pesticides present is vital to understanding their potential toxicity mechanisms. The presence of these toxins in the shared or adjacent habitats creates a scenario of significant environmental stress for both *Labeo bata* and the South Asian River Dolphin. This compromised state likely weakens their immune systems, making them more susceptible to opportunistic bacterial infections like MAS. Therefore, a thorough environmental analysis in Lab 3 is essential to quantify toxin levels, understand their potential as primary stressors or predisposing factors, and ultimately inform strategies to mitigate pollution and protect these vulnerable aquatic populations.
+
+**Problem:** Write a Python script that stores predefined threshold levels for three different toxins. Prompt the user to input the measured levels of each toxin. Use conditional statements (`if`, `elif`, `else`) to determine if each toxin level is within the safe range, borderline, or critical. Print a risk assessment for each toxin, indicating the potential impact on the South Asian River Dolphins.
+
+### Worksheet:
+
+1.  Define variables for the safe thresholds of three toxins (Ammonia: 0.5 ppm, Nitrite: 3 ppm, Pesticides - Glyphosphate: 0.7 ppm).
+2.  Prompt the user to enter the measured level for Ammonia. Store it as a float. Use `if/elif/else` to print "Safe", "Borderline", or "Critical" based on the thresholds (e.g., Borderline if within 0.1 ppm of the threshold).
+3.  Repeat step 2 for Nitrite and Pesticides - Glyphosphate. Adjust the borderline range as needed.
