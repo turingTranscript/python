@@ -4,39 +4,79 @@ title: Lab 12 - Statistical Concepts (Hypothesis Testing Basics)
 nav_exclude: true
 ---
 
-## Lab 12: Testing a Hypothesis - Statistical Concepts (Hypothesis Testing Basics)
 
-**Environmental Toxin and Bacterial Load:** Researchers hypothesize that higher levels of a specific environmental toxin (analyzed in Lab 3 and cleaned in Lab 10) might be associated with a higher bacterial load (CFU) in infected South Asian River Dolphins. You have paired data for a subset of dolphins where both toxin levels in their habitat and their CFU counts were measured. You will now perform an independent samples t-test to assess if there is a statistically significant difference in the average CFU counts between dolphins in high and low toxin environments.
+## Lab 12: Designing & Debugging Functions for Basic Data Analysis with NumPy & Pandas
 
-**Problem:** Write a Python script that performs an independent samples t-test to compare the mean CFU counts of dolphins in areas with high and low toxin levels. You will use the `scipy.stats` module for this test.
+**Core Idea:** This lab focuses on developing and debugging reusable functions for fundamental data analysis using NumPy arrays and Pandas DataFrames. Mastering these allows for efficient handling and summary of large, structured datasets.
+
+**Environmental Measurement Data:** You have collected extensive environmental data from various river segments, including measurements for temperature, pH, and oxygen levels. This data needs to be loaded, structured, and summarized efficiently.
+
+**Problem:** Design and implement reusable Python functions to:
+1.  Load numerical data into NumPy arrays for efficient array-based operations.
+2.  Create Pandas DataFrames from structured data, allowing for column-based analysis.
+3.  Calculate basic descriptive statistics (mean, median, standard deviation, min, max) for specific columns within DataFrames.
+4.  Filter and select data based on specific criteria using Pandas.
+You will practice debugging these functions, paying attention to data types, dimensions, and Pandas indexing.
 
 ### Worksheet:
 
-1.  Import the `scipy.stats` module.
-2.  Create a list of tuples, where each tuple contains the toxin level (in ppm) in a dolphin’s habitat and their corresponding CFU count:
+1.  Import necessary modules: `import numpy as np`, `import pandas as pd`.
+2.  Define sample data (as a list of lists, simulating rows from a CSV):
     ```python
-    dolphin_data_toxin_cfu = [
-        (0.8, 1500),
-        (1.2, 3200),
-        (0.5, 900),
-        (2.5, 4500),
-        (0.9, 1800),
-        (3.1, 5100),
-        (1.1, 2500),
-        (2.8, 3900),
-        (2.2, 4100),
-        (0.7, 1100),
-        (1.3, 2800),
-        (2.9, 4800)
+    environmental_data_raw = [
+        ['Segment_A', 25.1, 7.2, 8.5],
+        ['Segment_B', 24.5, 7.8, 9.1],
+        ['Segment_A', 26.0, 7.1, 8.2],
+        ['Segment_C', 23.8, 7.5, 9.5],
+        ['Segment_B', 25.5, 7.9, 8.8],
+        ['Segment_A', 24.9, 7.3, 8.7]
     ]
+    column_names = ['SegmentID', 'Temperature_C', 'pH', 'Oxygen_mg_L']
     ```
-3.  Define a threshold for "high" toxin level (e.g., $\geq 2.0$ ppm) and "low" toxin level (e.g., $< 1.5$ ppm).
-4.  Formulate a null hypothesis ($H_0$) and an alternative hypothesis ($H_A$) for this investigation:
-    * $H_0$: There is no significant difference in the mean bacterial load (CFU) between South Asian River Dolphins inhabiting areas with high and low levels of the specific toxin.
-    * $H_A$: The mean bacterial load (CFU) is significantly higher in South Asian River Dolphins inhabiting areas with high levels of the specific toxin compared to those in areas with low levels of the toxin (one-tailed test).
-5.  Create two empty lists: one to store CFU counts for dolphins in "low toxin" areas and another for "high toxin" areas, based on the defined thresholds.
-6.  Iterate through the `dolphin_data_toxin_cfu` list. For each dolphin, based on their toxin level, append their CFU count to the appropriate list.
-7.  Perform an independent samples t-test using `scipy.stats.ttest_ind()` on the two lists of CFU counts. Assume equal variances for simplicity (`equal_var=True`).
-8.  Print the calculated t-statistic and the p-value.
-9.  Define a significance level ($\alpha$), commonly 0.05.
-10. Based on the p-value and the significance level, make a conclusion about whether to reject or fail to reject the null hypothesis. Explain your reasoning.
+
+3.  Design and Implement Reusable Functions:
+
+    a.  `create_numeric_numpy_array(data_list_of_lists, numeric_cols_indices)`:
+        * Purpose: Takes a `data_list_of_lists` (raw data) and a list of `numeric_cols_indices` (e.g., `[1, 2, 3]` for Temperature, pH, Oxygen).
+        * Extracts only the specified numerical columns and converts them to a NumPy array of appropriate `dtype` (e.g., `float`).
+        * Returns the NumPy array.
+        * Example Usage: `np_data = create_numeric_numpy_array(environmental_data_raw, [1, 2, 3])`
+
+    b.  `create_pandas_dataframe(data_list_of_lists, columns)`:
+        * Purpose: Takes a `data_list_of_lists` and a list of `columns` for the DataFrame header.
+        * Creates and returns a Pandas DataFrame.
+        * Example Usage: `df = create_pandas_dataframe(environmental_data_raw, column_names)`
+
+    c.  `get_column_descriptive_stats(dataframe, column_name)`:
+        * Purpose: Takes a `dataframe` and a `column_name` string.
+        * Calculates the mean, median, standard deviation, minimum, and maximum for that column.
+        * Returns a dictionary of these statistics. Handle `KeyError` if column not found.
+        * Example Usage: `temp_stats = get_column_descriptive_stats(df, 'Temperature_C')`
+
+    d.  `filter_dataframe_by_condition(dataframe, column_name, operator_str, value)`:
+        * Purpose: Takes a `dataframe`, a `column_name`, a string `operator_str` (e.g., '>', '<', '=='), and a `value`.
+        * Filters the DataFrame rows based on the condition (e.g., `df['pH'] > 7.5`).
+        * Returns a new DataFrame containing only the filtered rows. Handle invalid operator strings.
+        * Example Usage: `high_pH_df = filter_dataframe_by_condition(df, 'pH', '>', 7.5)`
+
+5.  Integrate Functions for Workflow:
+    * Create a NumPy array for the numerical data. Print its shape and mean of the 'Temperature_C' column (index 1).
+    * Create a Pandas DataFrame from the raw data.
+    * Use `get_column_descriptive_stats()` to get and print statistics for 'Oxygen_mg_L'.
+    * Use `filter_dataframe_by_condition()` to find all readings from 'Segment_A'. Print the filtered DataFrame.
+
+6.  Debugging Exercise:
+
+    a.  Introduce a deliberate bug:
+        * In `create_numeric_numpy_array`, try to include a non-numeric column in `numeric_cols_indices` or forget to specify `dtype=float`.
+        * In `create_pandas_dataframe`, provide a `data_list_of_lists` where inner lists have inconsistent lengths, or provide incorrect `column_names`.
+        * In `get_column_descriptive_stats`, misspell a `column_name` or try to calculate statistics on a non-numeric column.
+        * In `filter_dataframe_by_condition`, make an error in the operator string comparison logic.
+    b.  Identify the bug: Run your script and observe `ValueError` (from NumPy type conversion), `KeyError` (from Pandas column access), `IndexError`, or unexpected filtering results.
+    c.  Use `print()` statements and Pandas/NumPy error messages:
+        * `print()` the `dtype` of your NumPy array.
+        * `print(dataframe.info())` after creating your DataFrame to check column dtypes and non-null counts.
+        * `print(dataframe.head())` to inspect the first few rows.
+        * `print()` the intermediate boolean series in `filter_dataframe_by_condition`.
+    d.  Fix the bug: Correct data selection, ensure consistent data structures, use appropriate Pandas/NumPy methods, and validate input to functions.
+    e.  Verify the fix: Rerun the script. Test with edge cases, such as an empty input list for data or a column containing missing values (even if the problem doesn't explicitly state missing values for this lab, it's good to consider how Pandas handles them by default).

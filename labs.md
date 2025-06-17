@@ -6,6 +6,18 @@ description: Past exams and other relevant material to aid you in the course.
 
 ---
 
+Jump to [Backdrop](#back), [Setup](#setup), or [Labs](#labs)
+
+<a name = 'back'></a>
+
+# Backdrop
+
+<a name = 'setup'></a>
+
+# Setup
+
+<a name = 'labs'></a>
+
 # Labs
 
 | Week | Topic | Problem | Solution |
