@@ -80,16 +80,16 @@ You will extensively debug these functions, paying attention to Pandas' data han
 
 6.  Debugging Exercise:
 
-    a.  Introduce a deliberate bug:  
+    a. Introduce a deliberate bug:  
         * In `load_and_initial_clean_data`, forget to include a common missing value representation in `na_values`, or attempt to convert a column that still has non-numeric strings to `float`.  
         * In `impute_missing_numeric_column`, try to impute a non-numeric column, or use an invalid `strategy` string.  
         * In `derive_health_score`, forget to handle `np.inf` or `np.nan` that might result from division by zero, leading to plots failing.  
         * In `plot_histogram` or `plot_scatterplot`, pass a column name that doesn't exist, or pass a non-numeric column to a plotting function.  
         * Forget to call `plt.show()` at the end, leading to plots not appearing.
-    b.  Identify the bug: Run your script and observe `ValueError`, `KeyError`, `TypeError` (e.g., trying to plot strings), or plots not rendering. Pay attention to `SettingWithCopyWarning` if it appears.
-    c.  Use `print()` statements, `df.info()`, `df.describe()`, and `try-except` blocks:  
+    b. Identify the bug: Run your script and observe `ValueError`, `KeyError`, `TypeError` (e.g., trying to plot strings), or plots not rendering. Pay attention to `SettingWithCopyWarning` if it appears.
+    c. Use `print()` statements, `df.info()`, `df.describe()`, and `try-except` blocks:  
         * After each cleaning/manipulation step, print `df.info()` and `df.head()` to inspect the DataFrame's state, data types, and missing values.  
         * Use `try-except` around plotting calls to catch errors related to non-numeric data.  
         * Check for `np.nan` and `np.inf` values in derived columns.
-    d.  Fix the bug: Correct data loading parameters, ensure proper data types, handle edge cases in calculations, and use correct column names/plotting parameters.
-    e.  Verify the fix: Rerun the script. Ensure all plots generate correctly, data is clean, and derived columns are accurate. Test with edge cases like all missing values in a column.
+    d. Fix the bug: Correct data loading parameters, ensure proper data types, handle edge cases in calculations, and use correct column names/plotting parameters.
+    e. Verify the fix: Rerun the script. Ensure all plots generate correctly, data is clean, and derived columns are accurate. Test with edge cases like all missing values in a column.

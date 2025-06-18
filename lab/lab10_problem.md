@@ -62,7 +62,7 @@ You will practice debugging these functions, paying close attention to network c
         * Purpose: Takes a `blast_hits_list` (from `parse_simplified_blast_output`), an `e_value_threshold` (float), and an `identity_threshold` (float, percentage).  
         * Filters the list to include only hits where E-value is less than or equal to the threshold AND % Identity is greater than or equal to the threshold.  
         * Returns a new list of filtered hit dictionaries.  
-        * Example Usage: `significant_hits = filter_blast_hits(blast_hits, 1e-10, 90.0)`
+        * Example Usage: `significant_hits = filter_blast_hits(blast_hits, 1e-10, 99.0)`
 
     d.  `summarize_protein_records(protein_records)`:  
         * Purpose: Takes a list of `SeqRecord` objects.  
@@ -73,7 +73,7 @@ You will practice debugging these functions, paying close attention to network c
     * Call `fetch_ncbi_records()` with `protein_accessions`.  
     * Call `summarize_protein_records()` to print details of the fetched proteins.  
     * Call `parse_simplified_blast_output()` with your `simulated_blast_output.txt`.  
-    * Call `filter_blast_hits()` on the parsed results with chosen thresholds (e.g., E-value $1e-5$, Identity $80.0$).  
+    * Call `filter_blast_hits()` on the parsed results with chosen thresholds (e.g., E-value `1e-5`, Identity `99.0`).  
     * Print the filtered BLAST hits in a readable format.  
 
 5.  Debugging Exercise:
